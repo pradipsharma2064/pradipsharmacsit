@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradip | Java Expert, Full-Stack Web Developer & Software Designer • B.Sc. CSIT Butwal Multiple Campus</title>
+  <meta name="description" content="Portfolio and Video Platform of Pradip: Java Specialist, Full-Stack Web Developer, and Software Designer studying B.Sc. CSIT at Butwal Multiple Campus, Tribhuvan University, Nepal.">
+  <meta name="keywords" content="Pradip, Java Developer, Web Developer, Software Designer, B.Sc. CSIT, Butwal Multiple Campus, Tribhuvan University, Nepal, Spring Boot, React, Video Website, AI Tool">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Neural Star Particle Canvas Background -->
+  <canvas id="canvas-bg"></canvas>
+
+  <div class="app-wrapper">
+
+    <!-- ==========================================================================
+         NAVIGATION BAR
+         ========================================================================== -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo">
+          <div class="logo-icon">P</div>
+          <div>
+            <span style="letter-spacing: -0.02em;">PRADIP</span>
+            <span style="font-size: 0.75rem; color: var(--accent-cyan); display: block; font-family: var(--font-mono); font-weight: 600;">JAVA • WEB • DESIGN</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#video-vault">Video Vault <span style="font-size: 0.65rem; background: var(--accent-pink); color: #fff; padding: 2px 6px; border-radius: 10px; margin-left: 3px;">HOT</span></a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#ai-architect">AI Idea Tool <span style="font-size: 0.65rem; background: var(--accent-cyan); color: #000; font-weight: 700; padding: 2px 6px; border-radius: 10px; margin-left: 3px;">AI</span></a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Sound Synthesizer Toggle -->
+          <button id="sound-toggle" class="sound-toggle-btn" title="Toggle UI Sound Effects" aria-label="Toggle Sound">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+
+          <!-- Theme Switcher -->
+          <button id="theme-toggle" class="theme-toggle-btn" title="Switch Theme (Cyber / Light / Nebula)" aria-label="Switch Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <!-- Resume Action -->
+          <button id="open-resume-btn" class="btn btn-secondary btn-sm" style="display: inline-flex;">
+            <i class="fas fa-file-alt"></i> Resume
+          </button>
+
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <i class="fas fa-paper-plane"></i> Let's Talk
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text-content">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>B.Sc. CSIT Scholar • Butwal Multiple Campus, Nepal</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering High-Speed <span class="text-gradient">Java Architectures</span> & Engaging <span class="text-gradient">Web Platforms</span>
+          </h1>
+
+          <div class="typewriter-wrap">
+            <span>&gt;</span>
+            <span id="typewriter-text"></span>
+            <span class="cursor-blink"></span>
+          </div>
+
+          <p class="hero-bio">
+            Hello! I am <strong style="color: var(--text-primary);">Pradip</strong>, a multidisciplinary 
+            <span class="text-gradient-java" style="font-weight: 700;">Java Specialist</span>, 
+            <strong>Full-Stack Web Developer</strong>, and <strong>Software Designer</strong> studying 
+            <span class="hero-campus-highlight">B.Sc. CSIT at Butwal Multiple Campus</span> (Tribhuvan University), Nepal. 
+            I bridge rock-solid backend microservices with elegant, accessible user interfaces and interactive video learning.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#video-vault" class="btn btn-primary">
+              <i class="fas fa-play-circle"></i> Watch Video Vault
+            </a>
+            <a href="#ai-architect" class="btn btn-neon">
+              <i class="fas fa-robot"></i> Launch AI Idea Tool
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-code-branch"></i> View Projects
+            </a>
+          </div>
+
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <h3><span class="stat-number" data-count="50">0</span>+</h3>
+              <p>Projects Shipped</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="stat-number" data-count="12">0</span>+</h3>
+              <p>Certifications</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="stat-number" data-count="100">0</span>+</h3>
+              <p>Video Lectures</p>
+            </div>
+            <div class="stat-item">
+              <h3><span class="stat-number" data-count="4">0</span>th</h3>
+              <p>CSIT Semester Year</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Interactive Code Window -->
+        <div class="hero-visual-card">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="window-tabs">
+                <button class="window-tab active" data-lang="java">PradipEngineer.java</button>
+                <button class="window-tab" data-lang="react">Showcase.tsx</button>
+                <button class="window-tab" data-lang="design">AuraDesign.css</button>
+              </div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">UTF-8</span>
+            </div>
+
+            <pre class="window-body"><code id="hero-code-display"><span class="code-kw">@Service</span>
+<span class="code-kw">@Transactional</span>
+<span class="code-kw">public class</span> <span class="code-fn">PradipCoreEngineer</span> {
+  <span class="code-kw">private final</span> UniversityCampus campus = <span class="code-str">"Butwal Multiple Campus"</span>;
+  <span class="code-kw">private final</span> Degree program = <span class="code-str">"B.Sc. CSIT (Tribhuvan University)"</span>;
+
+  <span class="code-kw">public</span> SystemArch <span class="code-fn">engineerEnterpriseSolution</span>() {
+    <span class="code-kw">return</span> SpringBootCluster.<span class="code-fn">builder</span>()
+      .<span class="code-fn">concurrency</span>(VirtualThreads.OPTIMAL)
+      .<span class="code-fn">resilience</span>(FaultTolerance.ACTIVE)
+      .<span class="code-fn">build</span>();
+  }
+}</code></pre>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-pos-1">
+            <i class="fab fa-java" style="color: #f89820; font-size: 1.6rem;"></i>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700;">Java Enterprise</div>
+              <div style="font-size: 0.725rem; color: var(--accent-cyan);">Spring Boot & Microservices</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-pos-2">
+            <i class="fas fa-graduation-cap" style="color: var(--accent-cyan); font-size: 1.6rem;"></i>
+            <div>
+              <div style="font-size: 0.85rem; font-weight: 700;">Butwal Multiple Campus</div>
+              <div style="font-size: 0.725rem; color: var(--text-muted);">B.Sc. CSIT • Nepal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME & CSIT STUDENT SECTION
+         ========================================================================== -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-user-circle"></i> Profile & Journey</div>
+          <h2 class="section-title">Bridging Academic CS Rigor with <span class="text-gradient">Production Engineering</span></h2>
+          <p class="section-desc">From algorithms and operating systems at Butwal Multiple Campus to modern full-stack web and enterprise Java systems.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Visual: Campus Card & Credentials -->
+          <div class="about-image-card glass-panel">
+            <div class="student-badge-banner">
+              <div class="campus-emblem">🏛️</div>
+              <h3 class="campus-title">Butwal Multiple Campus</h3>
+              <p class="campus-sub">Tribhuvan University • Butwal, Lumbini, Nepal</p>
+              <div class="nepal-flag-badge">
+                <span>🇳🇵</span> B.Sc. CSIT Program (Bachelor in Computer Science & IT)
+              </div>
+            </div>
+
+            <ul class="info-bullet-list">
+              <li class="info-bullet">
+                <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>
+                  <strong style="color: #fff; display: block;">Field of Study</strong>
+                  <span>Computer Science & Information Technology (CSIT)</span>
+                </div>
+              </li>
+              <li class="info-bullet">
+                <div class="info-icon"><i class="fas fa-laptop-code"></i></div>
+                <div>
+                  <strong style="color: #fff; display: block;">Core Disciplines</strong>
+                  <span>OOP, Data Structures, Distributed Systems, Software Engineering</span>
+                </div>
+              </li>
+              <li class="info-bullet">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>
+                  <strong style="color: #fff; display: block;">Location & Base</strong>
+                  <span>Butwal, Rupandehi, Nepal (Open for Remote & Global Roles)</span>
+                </div>
+              </li>
+              <li class="info-bullet">
+                <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                <div>
+                  <strong style="color: #fff; display: block;">Certifications</strong>
+                  <span>Oracle Certified Java, Meta Full-Stack, Google UX, AWS Cloud</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Narrative & Philosophy -->
+          <div class="about-text">
+            <h3 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 1.25rem;">
+              Passionate CSIT Student, Java Architect & Creative Software Designer
+            </h3>
+
+            <p>
+              I am currently pursuing my <strong>B.Sc. in Computer Science and Information Technology (B.Sc. CSIT)</strong> at 
+              <strong>Butwal Multiple Campus</strong>, one of Nepal's most respected constituent colleges under Tribhuvan University. 
+              My academic curriculum provides me with deep mathematical, theoretical, and algorithmic foundations, which I translate 
+              directly into high-performance software systems.
+            </p>
+
+            <div class="highlight-box">
+              <strong style="color: var(--accent-cyan);"><i class="fas fa-quote-left"></i> My Engineering Philosophy:</strong><br>
+              "Code should not only run fast and scale seamlessly on the server; it must feel intuitive, welcoming, and empowering to every human interacting with the screen."
+            </div>
+
+            <p>
+              Over the years, I have specialized in <strong>Core & Enterprise Java (Spring Boot, Microservices, JVM optimization, Concurrency)</strong>, 
+              modern <strong>Web Development (HTML5, Tailwind, React, JavaScript ESNext, REST & WebSockets)</strong>, and 
+              <strong>Software & UI/UX Design (Figma, Design Systems, Clean Architecture)</strong>.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+              <button class="btn btn-primary" onclick="document.getElementById('open-resume-btn').click();">
+                <i class="fas fa-download"></i> View Curriculum Vitae
+              </button>
+              <a href="#certifications" class="btn btn-secondary">
+                <i class="fas fa-certificate"></i> Explore Certifications
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Send Inquiries
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIDEO WEBSITE & MEDIA HUB ("THE VIDEO VAULT")
+         ========================================================================== -->
+    <section id="video-vault" class="video-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-video"></i> Video Platform & Tutorials</div>
+          <h2 class="section-title">The Developer <span class="text-gradient">Video Vault</span></h2>
+          <p class="section-desc">Interactive tech lectures, deep architecture breakdowns, live coding sessions, and B.Sc. CSIT project walk-throughs.</p>
+        </div>
+
+        <!-- Featured High-End Video Player -->
+        <div id="featured-video-container" class="featured-video-container">
+          <div class="custom-player-wrapper paused">
+            <!-- Canvas Animated Stream / Video Visualizer -->
+            <canvas id="featured-video-canvas" class="video-screen-canvas"></canvas>
+
+            <!-- Center Big Play Button Overlay -->
+            <div id="video-overlay-play" class="video-overlay-play" title="Play Video">
+              <i class="fas fa-play"></i>
+            </div>
+
+            <!-- Custom Video Player Controls Bar -->
+            <div class="player-controls-bar">
+              <!-- Scrub Progress Bar -->
+              <div id="player-progress-bar" class="player-progress-container">
+                <div id="player-progress-fill" class="player-progress-fill">
+                  <div class="player-progress-thumb"></div>
+                </div>
+              </div>
+
+              <!-- Controls Actions Row -->
+              <div class="player-controls-row">
+                <div class="player-left-controls">
+                  <button id="ctrl-play-btn" class="player-ctrl-btn" title="Play/Pause">
+                    <i class="fas fa-play"></i>
+                  </button>
+                  <span id="ctrl-time-display" class="time-display">00:00 / 18:42</span>
+                  
+                  <div style="display: flex; align-items: center; gap: 0.4rem; margin-left: 0.5rem;">
+                    <button id="player-volume-btn" class="player-ctrl-btn" title="Mute/Unmute">
+                      <i class="fas fa-volume-up"></i>
+                    </button>
+                    <input type="range" id="player-volume-slider" class="volume-slider" min="0" max="1" step="0.05" value="0.8">
+                  </div>
+                </div>
+
+                <div class="player-right-controls">
+                  <!-- Playback Speed -->
+                  <select id="player-speed-select" class="speed-select" title="Playback Speed">
+                    <option value="0.75">0.75x</option>
+                    <option value="1.0" selected>1.0x Normal</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2.0">2.0x</option>
+                  </select>
+
+                  <button id="player-fullscreen-btn" class="player-ctrl-btn" title="Fullscreen">
+                    <i class="fas fa-expand"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Video Metadata Details -->
+          <div class="featured-video-meta">
+            <div>
+              <h3 id="fvideo-title" class="fvideo-title">Java Spring Boot Microservices: Production Architecture & Performance Tuning</h3>
+              <p id="fvideo-desc" class="fvideo-desc">Deep dive into building fault-tolerant microservices with Java 21, Spring Boot 3, Spring Cloud Gateway, Kafka event streaming, and JVM garbage collector optimization.</p>
+              <div id="fvideo-tags" class="fvideo-tags">
+                <span class="tag-badge">#JavaEnterprise</span>
+                <span class="tag-badge">#SpringBoot3</span>
+                <span class="tag-badge">#CSITNepal</span>
+              </div>
+            </div>
+
+            <div class="fvideo-stats-actions">
+              <span id="fvideo-views" style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-eye"></i> 14.2K views</span>
+              <button id="fvideo-like-btn" class="action-chip">
+                <i class="fas fa-heart"></i> <span id="fvideo-likes-count">842</span>
+              </button>
+              <button id="fvideo-share-btn" class="action-chip">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Filter Pills -->
+        <div class="video-filter-bar">
+          <button class="filter-btn active" data-filter="all"><i class="fas fa-border-all"></i> All Videos</button>
+          <button class="filter-btn" data-filter="java"><i class="fab fa-java"></i> Java Enterprise</button>
+          <button class="filter-btn" data-filter="web"><i class="fas fa-globe"></i> Full-Stack Web</button>
+          <button class="filter-btn" data-filter="design"><i class="fas fa-pen-nib"></i> UI/UX Design</button>
+          <button class="filter-btn" data-filter="csit"><i class="fas fa-graduation-cap"></i> CSIT Projects</button>
+          <button class="filter-btn" data-filter="shorts"><i class="fas fa-bolt"></i> Tech Shorts</button>
+        </div>
+
+        <!-- Video Cards Grid -->
+        <div id="video-grid-container" class="video-grid">
+          <!-- Populated dynamically by video-player.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & ARCHITECTURE MATRIX
+         ========================================================================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-cubes"></i> Technical Arsenal</div>
+          <h2 class="section-title">Engineered with <span class="text-gradient">Precision & Craft</span></h2>
+          <p class="section-desc">A deep dive into my core competencies across enterprise Java, modern web development, software design, and DevOps.</p>
+        </div>
+
+        <!-- Skills Category Tabs -->
+        <div class="skills-tabs-nav">
+          <button class="skill-tab-btn active" data-target="skill-panel-java">
+            <i class="fab fa-java" style="color: #f89820;"></i> Java & Backend
+          </button>
+          <button class="skill-tab-btn" data-target="skill-panel-web">
+            <i class="fab fa-react" style="color: var(--accent-cyan);"></i> Modern Web Dev
+          </button>
+          <button class="skill-tab-btn" data-target="skill-panel-design">
+            <i class="fas fa-drafting-compass" style="color: var(--accent-pink);"></i> Software & UI/UX Design
+          </button>
+          <button class="skill-tab-btn" data-target="skill-panel-data">
+            <i class="fas fa-server" style="color: var(--accent-emerald);"></i> Databases & Cloud
+          </button>
+        </div>
+
+        <!-- Panel 1: Java & Backend -->
+        <div id="skill-panel-java" class="skills-grid skill-panel-content">
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-java" style="color: #f89820;"></i> Java SE 17 / 21</span>
+              <span class="sm-pct">95%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 95%;"></div></div>
+            <p class="sm-desc">Virtual Threads, OOP, Concurrency, Stream API, Generics, JVM memory profiling.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-leaf" style="color: #4ade80;"></i> Spring Boot 3 & Cloud</span>
+              <span class="sm-pct">92%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 92%;"></div></div>
+            <p class="sm-desc">Spring MVC, Data JPA, Security with JWT & OAuth2, Cloud Gateway, Eureka.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-network-wired" style="color: #38bdf8;"></i> Microservices Architecture</span>
+              <span class="sm-pct">88%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 88%;"></div></div>
+            <p class="sm-desc">Domain-Driven Design (DDD), Resilience4j Circuit Breakers, API rate limiting.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-exchange-alt" style="color: #eab308;"></i> Kafka & Event Streaming</span>
+              <span class="sm-pct">85%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 85%;"></div></div>
+            <p class="sm-desc">Event-driven architecture, consumer groups, partition management, idempotent producers.</p>
+          </div>
+        </div>
+
+        <!-- Panel 2: Modern Web Dev -->
+        <div id="skill-panel-web" class="skills-grid skill-panel-content" style="display: none;">
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-react" style="color: #00f2fe;"></i> React 18 & Next.js</span>
+              <span class="sm-pct">92%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 92%;"></div></div>
+            <p class="sm-desc">Custom hooks, Context API, SSR, Component composition, state management.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-js-square" style="color: #fbbf24;"></i> JavaScript (ESNext) / TS</span>
+              <span class="sm-pct">94%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 94%;"></div></div>
+            <p class="sm-desc">Asynchronous programming, closures, Web Audio API, Canvas rendering, WebSockets.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-css3-alt" style="color: #38bdf8;"></i> Modern CSS3 & Tailwind</span>
+              <span class="sm-pct">96%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 96%;"></div></div>
+            <p class="sm-desc">Glassmorphism, CSS grid & flexbox, micro-animations, mobile-first responsive design.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-plug" style="color: #10b981;"></i> REST & WebSockets APIs</span>
+              <span class="sm-pct">90%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 90%;"></div></div>
+            <p class="sm-desc">Real-time bi-directional streaming, WebRTC signaling, OpenAPI/Swagger docs.</p>
+          </div>
+        </div>
+
+        <!-- Panel 3: Software & UI/UX Design -->
+        <div id="skill-panel-design" class="skills-grid skill-panel-content" style="display: none;">
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-figma" style="color: #ff0080;"></i> Figma & Design Systems</span>
+              <span class="sm-pct">90%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 90%;"></div></div>
+            <p class="sm-desc">Wireframing, high-fidelity prototypes, design token libraries, user journeys.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-sitemap" style="color: #a78bfa;"></i> Clean Architecture & SOLID</span>
+              <span class="sm-pct">95%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 95%;"></div></div>
+            <p class="sm-desc">Separation of concerns, repository pattern, factory & observer design patterns.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-universal-access" style="color: #34d399;"></i> Accessibility & UX (WCAG)</span>
+              <span class="sm-pct">88%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 88%;"></div></div>
+            <p class="sm-desc">Human-centered design, contrast ratios, keyboard navigation, empathetic interfaces.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-pencil-ruler" style="color: #f59e0b;"></i> Interaction & Motion Design</span>
+              <span class="sm-pct">87%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 87%;"></div></div>
+            <p class="sm-desc">Micro-interactions, state transitions, audio feedback cues, visual hierarchy.</p>
+          </div>
+        </div>
+
+        <!-- Panel 4: Databases & Cloud -->
+        <div id="skill-panel-data" class="skills-grid skill-panel-content" style="display: none;">
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fas fa-database" style="color: #38bdf8;"></i> PostgreSQL & MySQL</span>
+              <span class="sm-pct">92%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 92%;"></div></div>
+            <p class="sm-desc">Complex joins, index optimization, ACID compliance, schema normalization.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-docker" style="color: #00f2fe;"></i> Docker & Containers</span>
+              <span class="sm-pct">86%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 86%;"></div></div>
+            <p class="sm-desc">Multi-stage builds for Java JARs, Docker Compose, network bridges.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-aws" style="color: #f59e0b;"></i> AWS & Cloud Infra</span>
+              <span class="sm-pct">80%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 80%;"></div></div>
+            <p class="sm-desc">EC2, S3 bucket storage, RDS PostgreSQL, IAM security principles.</p>
+          </div>
+
+          <div class="skill-metric-card">
+            <div class="sm-header">
+              <span class="sm-name"><i class="fab fa-git-alt" style="color: #ef4444;"></i> Git, CI/CD & Testing</span>
+              <span class="sm-pct">91%</span>
+            </div>
+            <div class="sm-bar-bg"><div class="sm-bar-fill" style="width: 91%;"></div></div>
+            <p class="sm-desc">GitHub Actions, JUnit 5, Mockito, branch workflows, automated releases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS & DEGREES SECTION
+         ========================================================================== -->
+    <section id="certifications" class="cert-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-award"></i> Validated Qualifications</div>
+          <h2 class="section-title">Degrees & <span class="text-gradient">Professional Certifications</span></h2>
+          <p class="section-desc">Academic excellence from Tribhuvan University combined with world-recognized software engineering credentials.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: B.Sc. CSIT Degree -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fas fa-university" style="color: var(--accent-cyan);"></i></div>
+                <div>
+                  <h3 class="cert-title">Bachelor of Science in CSIT</h3>
+                  <div class="cert-issuer">Tribhuvan University • Butwal Multiple Campus</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                Four-year rigorous computer science degree covering Advanced Algorithms, Operating Systems, Database Architecture, Theory of Computation, AI, and Network Systems in Nepal.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">Data Structures</span>
+                <span class="skill-mini-tag">System Design</span>
+                <span class="skill-mini-tag">Compiler Design</span>
+                <span class="skill-mini-tag">Nepal CSIT</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">TU-REG-2023-CSIT-048</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="tu-csit">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 2: Oracle Java Professional -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fab fa-java" style="color: #f89820;"></i></div>
+                <div>
+                  <h3 class="cert-title">Oracle Certified Professional: Java SE 17</h3>
+                  <div class="cert-issuer">Oracle University</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                Official accreditation validating deep enterprise mastery of Java language mechanics, concurrency, stream pipelines, JVM garbage collection, and functional programming.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">Java SE 17</span>
+                <span class="skill-mini-tag">Concurrency</span>
+                <span class="skill-mini-tag">JVM Optimization</span>
+                <span class="skill-mini-tag">Streams</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">OCP-JAVA-829104</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="oracle-java">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 3: Meta Full-Stack Web Dev -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fab fa-meta" style="color: #00f2fe;"></i></div>
+                <div>
+                  <h3 class="cert-title">Meta Full-Stack Web Development</h3>
+                  <div class="cert-issuer">Meta (Facebook Technologies)</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                Comprehensive specialization in modern client-side React architecture, responsive web design principles, RESTful API design, version control, and production builds.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">React.js</span>
+                <span class="skill-mini-tag">HTML5 & CSS3</span>
+                <span class="skill-mini-tag">REST APIs</span>
+                <span class="skill-mini-tag">Web Architecture</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">META-FS-9912048</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="meta-web">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 4: AWS Cloud Practitioner -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fab fa-aws" style="color: #f59e0b;"></i></div>
+                <div>
+                  <h3 class="cert-title">AWS Certified Cloud Foundations</h3>
+                  <div class="cert-issuer">Amazon Web Services (AWS)</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                Cloud infrastructure architecture, security compliance, high-availability deployments, RDS relational databases, and auto-scaling microservices on AWS.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">Cloud Infrastructure</span>
+                <span class="skill-mini-tag">EC2 & S3</span>
+                <span class="skill-mini-tag">IAM Security</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">AWS-CLF-003847</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="aws-cloud">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 5: Google UX Design -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fab fa-google" style="color: #ff0080;"></i></div>
+                <div>
+                  <h3 class="cert-title">Google UX Design Professional</h3>
+                  <div class="cert-issuer">Google Career Certificates</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                User-centered design thinking, low and high-fidelity wireframing in Figma, accessibility testing (WCAG), responsive layouts, and empirical usability study methodologies.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">Figma Prototyping</span>
+                <span class="skill-mini-tag">User Research</span>
+                <span class="skill-mini-tag">Design Systems</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">GGL-UX-77192</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="google-ux">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+
+          <!-- Cert 6: HackerRank Gold Java -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-header">
+                <div class="cert-org-icon"><i class="fab fa-hackerrank" style="color: #22c55e;"></i></div>
+                <div>
+                  <h3 class="cert-title">HackerRank Java (Gold Badge)</h3>
+                  <div class="cert-issuer">HackerRank Global Skill Certification</div>
+                </div>
+              </div>
+              <p class="cert-body">
+                Top percentile achievement in advanced algorithmic problem solving, dynamic programming, multi-threaded task management, and complex data structures.
+              </p>
+              <div class="cert-skills">
+                <span class="skill-mini-tag">Java Gold (5★)</span>
+                <span class="skill-mini-tag">Data Structures</span>
+                <span class="skill-mini-tag">Algorithms</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-id">HR-GOLD-JAVA-2026</span>
+              <button class="btn btn-secondary btn-sm view-cert-btn" data-cert="hackerrank-java">
+                <i class="fas fa-eye"></i> View Credential
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS PORTFOLIO
+         ========================================================================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-laptop-code"></i> Featured Work</div>
+          <h2 class="section-title">Engineered to <span class="text-gradient">Scale & Inspire</span></h2>
+          <p class="section-desc">Real-world production architectures, campus software solutions, and cutting-edge web applications.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Smart Campus Butwal -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #091224 0%, #152238 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-university" style="font-size: 3rem; color: var(--accent-cyan); margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">BUTWAL CAMPUS ERP</span>
+              </div>
+              <span class="project-badge-top">B.Sc. CSIT Capstone</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Campus Automation & Academic ERP</h3>
+              <p class="project-desc">
+                Architected for Butwal Multiple Campus (TU, Nepal). Handles student attendance tracking, semester GPA calculation, faculty grading portals, and JWT secured role-based authorization.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Java 21</span>
+                <span class="stack-tag">Spring Boot</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">Docker</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.videoHub.openVideoModal('vid-4')">
+                  <i class="fas fa-play"></i> Watch Walkthrough
+                </button>
+                <a href="https://github.com/pradip-csit/smart-campus-butwal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: HyperStream Video Platform -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #180924 0%, #2a1142 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-video" style="font-size: 3rem; color: var(--accent-pink); margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">HYPERSTREAM CORE</span>
+              </div>
+              <span class="project-badge-top">High-Throughput Streaming</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">HyperStream: Distributed Video Engine</h3>
+              <p class="project-desc">
+                A custom video on-demand and tech tutorial web ecosystem. Implements HTTP range chunk streaming, WebSocket live chat synchronization, and custom HTML5 canvas player controls.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Java Netty</span>
+                <span class="stack-tag">WebSockets</span>
+                <span class="stack-tag">HTML5 Canvas</span>
+                <span class="stack-tag">Tailwind</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.videoHub.openVideoModal('vid-2')">
+                  <i class="fas fa-play"></i> Watch Walkthrough
+                </button>
+                <a href="https://github.com/pradip-csit/hyperstream-video-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: FinFlow Core Banking -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #091a18 0%, #113630 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-coins" style="font-size: 3rem; color: var(--accent-emerald); margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">FINFLOW LEDGER</span>
+              </div>
+              <span class="project-badge-top">FinTech & Microservices</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FinFlow: High-Concurrency Banking Core</h3>
+              <p class="project-desc">
+                Distributed double-entry financial ledger built with Java Spring Boot and Kafka. Guarantees sub-40ms response times and strict idempotency for digital payments across Nepal.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Spring Cloud</span>
+                <span class="stack-tag">Apache Kafka</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Redis</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.videoHub.openVideoModal('vid-1')">
+                  <i class="fas fa-play"></i> Watch Walkthrough
+                </button>
+                <a href="https://github.com/pradip-csit/finflow-banking-core" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Aura UI/UX Design System -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1f1124 0%, #3d1c47 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-palette" style="font-size: 3rem; color: #d946ef; margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">AURA DESIGN SYSTEM</span>
+              </div>
+              <span class="project-badge-top">UI/UX & Design Tokens</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aura: Glassmorphism Design System</h3>
+              <p class="project-desc">
+                An accessible, dark-mode first design token and React component suite designed in Figma and coded with modern CSS custom properties and micro-interaction animations.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Figma</span>
+                <span class="stack-tag">Design Tokens</span>
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">WCAG AAA</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.videoHub.openVideoModal('vid-3')">
+                  <i class="fas fa-play"></i> Watch Walkthrough
+                </button>
+                <a href="https://github.com/pradip-csit/aura-design-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Himalayan Trekking Portal -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #0f1c24 0%, #15384a 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-mountain" style="font-size: 3rem; color: #38bdf8; margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">HIMALAYA EXPEDITIONS</span>
+              </div>
+              <span class="project-badge-top">Full-Stack Tourism Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Himalayan Trails & Eco-Trek Platform</h3>
+              <p class="project-desc">
+                High-performance tourism and trekking portal for Nepal with interactive topographic altitude graphs, offline itinerary caching, and multi-currency reservation checkout.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Node / Express</span>
+                <span class="stack-tag">Leaflet Maps</span>
+                <span class="stack-tag">PWA</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.showDevToast('Live demo active! Opening preview...');">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </button>
+                <a href="https://github.com/pradip-csit/himalayan-trek-web" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Java High-Frequency Algo -->
+          <div class="project-card">
+            <div class="project-visual">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1f1a0d 0%, #3d3215 100%); display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                <i class="fas fa-chart-line" style="font-size: 3rem; color: #f59e0b; margin-bottom: 0.5rem;"></i>
+                <span style="font-family: var(--font-mono); font-size: 0.85rem; color: #cbd5e1; font-weight: 700;">ALGO TICK ENGINE</span>
+              </div>
+              <span class="project-badge-top">Low-Latency Java</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AlgoTick: Low-Latency Order Matcher</h3>
+              <p class="project-desc">
+                Zero-allocation Java order matching engine processing 250,000 orders/sec using lock-free ring buffers (LMAX Disruptor pattern) and off-heap memory management.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Java 21</span>
+                <span class="stack-tag">Disruptor</span>
+                <span class="stack-tag">Off-Heap Memory</span>
+                <span class="stack-tag">Benchmarking</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" onclick="window.videoHub.openVideoModal('vid-5')">
+                  <i class="fas fa-play"></i> Watch Walkthrough
+                </button>
+                <a href="https://github.com/pradip-csit/algotick-engine" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE AI TOOL ("DEVGENIUS AI & CONCEPT ARCHITECT")
+         ========================================================================== -->
+    <section id="ai-architect" class="ai-tool-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-brain"></i> Interactive AI Engine</div>
+          <h2 class="section-title">DevGenius: <span class="text-gradient">AI Project & Idea Architect</span></h2>
+          <p class="section-desc">Generate instant production-grade software architectures, Java blueprints, and CSIT capstone proposals with AI.</p>
+        </div>
+
+        <div class="ai-tool-wrapper">
+          <div class="ai-header-bar">
+            <div>
+              <h3 style="font-size: 1.3rem; font-weight: 700; color: #fff;">
+                <i class="fas fa-microchip" style="color: var(--accent-cyan);"></i> DevGenius Intelligence Suite
+              </h3>
+              <span style="font-size: 0.85rem; color: var(--text-secondary);">
+                Empowered by Pradip's CSIT research & software engineering knowledge base
+              </span>
+            </div>
+
+            <!-- Mode Switch: Generator vs AI Chat Avatar -->
+            <div class="ai-mode-toggle">
+              <button id="mode-btn-gen" class="ai-mode-btn active">
+                <i class="fas fa-magic"></i> Idea & Architecture Generator
+              </button>
+              <button id="mode-btn-chat" class="ai-mode-btn">
+                <i class="fas fa-comment-dots"></i> Ask Pradip's AI Avatar
+              </button>
+            </div>
+          </div>
+
+          <!-- Mode 1: Generator Panel -->
+          <div id="ai-generator-panel" class="ai-tool-body">
+            <!-- Left Inputs -->
+            <div class="ai-input-panel">
+              <div class="form-group-ai">
+                <label><i class="fas fa-globe-asia" style="color: var(--accent-cyan);"></i> Select Domain / Industry Focus:</label>
+                <select id="ai-domain-select" class="form-control-ai">
+                  <option value="nepal-campus" selected>🎓 Nepal Academic & Smart Campus ERP (TU CSIT)</option>
+                  <option value="nepal-fintech">💳 FinTech & Digital Payment Gateway (eSewa/Khalti Architecture)</option>
+                  <option value="video-stream">🎥 Low-Latency Video Streaming & Lecture Hub</option>
+                  <option value="health-telemedicine">🏥 SwasthyaNepal: Rural Himalayan Telemedicine</option>
+                </select>
+              </div>
+
+              <div class="form-group-ai">
+                <label><i class="fas fa-layer-group" style="color: #f89820;"></i> Target Technology Stack:</label>
+                <select id="ai-stack-select" class="form-control-ai">
+                  <option value="java-spring-react" selected>Java 21 Spring Boot + React + Kafka + Docker</option>
+                  <option value="java-microservices">Enterprise Microservices (Spring Cloud + PostgreSQL + Redis)</option>
+                  <option value="modern-web-fullstack">Full-Stack Modern Web (React + Node + WebSockets)</option>
+                  <option value="lowlatency-java">Low-Latency Reactive Java (Netty + Project Loom Virtual Threads)</option>
+                </select>
+              </div>
+
+              <div class="form-group-ai">
+                <label><i class="fas fa-graduation-cap" style="color: var(--accent-emerald);"></i> Project Scale / Complexity:</label>
+                <select id="ai-complexity-select" class="form-control-ai">
+                  <option value="csit-capstone" selected>B.Sc. CSIT Final Year Capstone Project (Nepal)</option>
+                  <option value="enterprise-prod">Commercial Enterprise Microservices (High Throughput)</option>
+                  <option value="saas-mvp">Modern SaaS Production MVP (Fast Deployment)</option>
+                </select>
+              </div>
+
+              <div class="form-group-ai">
+                <label><i class="fas fa-keyboard" style="color: #a78bfa;"></i> Custom Prompt or Keyword (Optional):</label>
+                <input type="text" id="ai-custom-prompt" class="form-control-ai" placeholder="e.g. Include student grade encryption, WebSocket live updates...">
+              </div>
+
+              <div>
+                <span style="font-size: 0.775rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase;">Quick Prompt Starters:</span>
+                <div class="quick-prompts-list">
+                  <button class="quick-prompt-chip" data-prompt="Suggest TU CSIT Final Year Project">🎓 TU CSIT Final Year</button>
+                  <button class="quick-prompt-chip" data-prompt="Java Spring Boot Microservice Pattern">☕ Java Microservices</button>
+                  <button class="quick-prompt-chip" data-prompt="Video Streaming & Live Coding Engine">🎬 Video Streaming</button>
+                  <button class="quick-prompt-chip" data-prompt="High-Concurrency Nepal Payment Gateway">💳 Nepal FinTech</button>
+                </div>
+              </div>
+
+              <button id="ai-generate-btn" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                <i class="fas fa-sparkles"></i> Generate Architectural Blueprint
+              </button>
+            </div>
+
+            <!-- Right Output Display -->
+            <div class="ai-output-panel">
+              <div class="output-top-actions">
+                <div id="ai-status-indicator" class="output-status">
+                  <i class="fas fa-check-circle" style="color: var(--accent-emerald);"></i>
+                  <span>Architecture Spec Ready</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem;">
+                  <button id="ai-copy-output-btn" class="btn btn-secondary btn-sm" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i> Copy
+                  </button>
+                  <button id="ai-export-md-btn" class="btn btn-secondary btn-sm" title="Download Markdown file">
+                    <i class="fas fa-download"></i> .MD
+                  </button>
+                </div>
+              </div>
+
+              <div id="ai-output-content" class="output-content-area">
+                <!-- Injected by ai-tool.js -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode 2: Interactive AI Chat Avatar Panel -->
+          <div id="ai-chat-panel" class="ai-tool-body" style="display: none; grid-template-columns: 1fr;">
+            <div class="ai-output-panel" style="min-height: 480px;">
+              <div class="output-top-actions">
+                <div class="output-status">
+                  <span class="pulse-dot"></span>
+                  <span style="color: #fff; font-weight: 700;">Pradip's AI Avatar Online</span>
+                </div>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+                  Trained on B.Sc. CSIT & Software Engineering Portfolio
+                </span>
+              </div>
+
+              <div id="ai-chat-thread" class="ai-chat-thread">
+                <div class="chat-bubble bubble-ai">
+                  👋 <strong>Namaste!</strong> I am Pradip's AI Avatar. Ask me anything about his 
+                  <strong>B.Sc. CSIT studies at Butwal Multiple Campus</strong>, his 
+                  <strong>Core Java & Spring Boot mastery</strong>, his <strong>web developer portfolio</strong>, or his 
+                  <strong>certifications & hire availability</strong>!
+                </div>
+              </div>
+
+              <div style="margin-bottom: 0.75rem;">
+                <div class="quick-prompts-list">
+                  <button class="quick-prompt-chip" data-prompt="Tell me about Pradip's CSIT studies at Butwal Multiple Campus">🏫 Butwal Multiple Campus?</button>
+                  <button class="quick-prompt-chip" data-prompt="What makes Pradip an expert in Java and Spring Boot?">☕ Java Expertise?</button>
+                  <button class="quick-prompt-chip" data-prompt="What professional certifications has Pradip earned?">📜 Certifications?</button>
+                  <button class="quick-prompt-chip" data-prompt="How do I contact or hire Pradip for a project?">💼 How to Hire?</button>
+                </div>
+              </div>
+
+              <div class="chat-input-bar">
+                <input type="text" id="ai-chat-input" class="form-control-ai" placeholder="Ask Pradip's AI anything...">
+                <button id="ai-chat-send-btn" class="btn btn-primary">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT & INQUIRIES SECTION
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fas fa-envelope-open-text"></i> Connect & Collaborate</div>
+          <h2 class="section-title">Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
+          <p class="section-desc">Have a software engineering role, Java backend project, web development consultation, or academic collaboration? Let's connect.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Direct Info -->
+          <div class="contact-info-panel">
+            <div class="contact-card-box">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div style="flex: 1;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Direct Email</span>
+                <div style="font-size: 1rem; font-weight: 700; color: #fff;">pradip.csit.dev@gmail.com</div>
+              </div>
+              <button id="copy-email-btn" class="btn btn-secondary btn-sm" title="Copy Email">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div>
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Academic Base & Location</span>
+                <div style="font-size: 1rem; font-weight: 700; color: #fff;">Butwal Multiple Campus, Rupandehi, Nepal</div>
+                <span style="font-size: 0.8rem; color: var(--accent-cyan);">Tribhuvan University Constituent Campus</span>
+              </div>
+            </div>
+
+            <!-- Live Nepal Time Widget -->
+            <div class="nepal-time-card">
+              <div>
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: #fca5a5; font-weight: 700;">
+                  <i class="fas fa-clock"></i> Nepal Standard Time (NPT)
+                </span>
+                <div id="nepal-time-clock" class="time-clock-val">--:--:-- (NPT)</div>
+                <span style="font-size: 0.75rem; color: var(--text-secondary);">Asia/Kathmandu • GMT+5:45</span>
+              </div>
+              <div style="text-align: right;">
+                <span class="nepal-flag-badge">🇳🇵 Nepal</span>
+                <div style="font-size: 0.75rem; color: #34d399; margin-top: 0.4rem; font-weight: 600;">
+                  🟢 Available for Remote
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card-box">
+              <div class="contact-card-icon"><i class="fas fa-share-alt"></i></div>
+              <div style="width: 100%;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700;">Connect on Social & Dev Platforms</span>
+                <div style="display: flex; gap: 0.75rem; margin-top: 0.6rem; flex-wrap: wrap;">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fab fa-youtube" style="color: #ef4444;"></i> YouTube</a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem; color: #fff;">
+              Send an Inquiry or Project Proposal
+            </h3>
+
+            <form id="dev-contact-form">
+              <div class="form-row-2">
+                <div class="form-field">
+                  <label for="contact-name">Your Full Name *</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Henderson" required>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="e.g. alex@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-subject">Topic / Purpose</label>
+                <select id="contact-subject" class="form-input">
+                  <option value="Java Enterprise Consulting">Java Spring Boot Architecture / Backend Consulting</option>
+                  <option value="Full-Stack Web Project">Full-Stack Web Development Project</option>
+                  <option value="Software UI/UX Design">Software & UI/UX Design System</option>
+                  <option value="B.Sc. CSIT / Academic Collaboration">B.Sc. CSIT / Academic Research & Collaboration</option>
+                  <option value="Job / Remote Opportunity">Software Engineer Role / Remote Hiring</option>
+                  <option value="Other Inquiries">General Discussion / Tech Talk</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">Project Details or Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your project, timeline, or requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Transmit Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#hero" class="brand-logo" style="margin-bottom: 1rem; display: inline-flex;">
+              <div class="logo-icon">P</div>
+              <div>
+                <span style="letter-spacing: -0.02em;">PRADIP</span>
+                <span style="font-size: 0.75rem; color: var(--accent-cyan); display: block; font-family: var(--font-mono); font-weight: 600;">JAVA • WEB • DESIGN</span>
+              </div>
+            </a>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">
+              B.Sc. CSIT student at Butwal Multiple Campus, Tribhuvan University, Nepal. Blending robust Java microservices with futuristic, human-centered web design.
+            </p>
+          </div>
+
+          <div>
+            <h4 style="color: #fff; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">Navigation</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; color: var(--text-secondary);">
+              <li><a href="#about">About Pradip</a></li>
+              <li><a href="#skills">Tech Stack & Mastery</a></li>
+              <li><a href="#certifications">Degrees & Certifications</a></li>
+              <li><a href="#video-vault">Video Vault Platform</a></li>
+              <li><a href="#projects">Production Projects</a></li>
+              <li><a href="#ai-architect">DevGenius AI Tool</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color: #fff; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">Core Competencies</h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.9rem; color: var(--text-secondary);">
+              <li>Java 21 & Spring Boot 3</li>
+              <li>Microservices & Kafka</li>
+              <li>Modern React & Tailwind</li>
+              <li>UI/UX Design & Figma</li>
+              <li>SQL, Docker & Cloud</li>
+              <li>Tribhuvan Univ. CSIT</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 style="color: #fff; font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem;">Direct Contact</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.75rem;">
+              <i class="fas fa-map-marker-alt" style="color: var(--accent-cyan);"></i> Butwal Multiple Campus, Nepal
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+              <i class="fas fa-envelope" style="color: var(--accent-cyan);"></i> pradip.csit.dev@gmail.com
+            </p>
+            <button class="btn btn-neon btn-sm" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+              <i class="fas fa-arrow-up"></i> Back to Top
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Pradip. Engineered with Clean Architecture & Passion. All Rights Reserved.
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <span>Proudly from Butwal, Nepal 🇳🇵</span>
+            <span>•</span>
+            <span style="color: var(--accent-cyan);">B.Sc. CSIT Tribhuvan University</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+         MODALS (Video Detail, Resume, Certificate Preview)
+         ========================================================================== -->
+
+    <!-- Video Modal with Chapters & Discussion -->
+    <div id="video-modal" class="modal-overlay">
+      <div class="modal-dialog">
+        <div class="modal-header-bar">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fas fa-play-circle" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
+            <h3 id="modal-video-title" style="font-size: 1.15rem; font-weight: 700; color: #fff;">Video Walkthrough</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-video-desc" style="color: var(--text-secondary); font-size: 0.925rem; line-height: 1.6; margin-bottom: 1.5rem;"></p>
+
+          <h4 style="font-size: 1rem; color: var(--accent-cyan); margin-bottom: 0.75rem;">
+            <i class="fas fa-list-ol"></i> Video Chapters & Timeline
+          </h4>
+          <div id="modal-video-chapters" style="margin-bottom: 1.5rem;"></div>
+
+          <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+            <a id="modal-video-github" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <i class="fab fa-github"></i> Inspect Source Code Repository
+            </a>
+            <button class="btn btn-primary btn-sm" onclick="document.getElementById('video-modal').classList.remove('active'); document.getElementById('video-vault').scrollIntoView({behavior: 'smooth'});">
+              <i class="fas fa-play"></i> Watch in Video Vault
+            </button>
+          </div>
+
+          <h4 style="font-size: 1rem; color: #fbbf24; margin-bottom: 0.75rem;">
+            <i class="fas fa-comments"></i> Developer Discussions & Peer Reviews
+          </h4>
+          <div id="modal-video-comments"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume / Curriculum Vitae Modal -->
+    <div id="resume-modal" class="modal-overlay">
+      <div class="modal-dialog" style="max-width: 820px;">
+        <div class="modal-header-bar">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fas fa-file-pdf" style="color: var(--accent-pink); font-size: 1.3rem;"></i>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Curriculum Vitae • Pradip</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.75rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 1.25rem; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <h2 style="font-size: 1.6rem; font-weight: 800; color: #fff;">PRADIP</h2>
+                <p style="color: var(--accent-cyan); font-weight: 600;">Java Enterprise Specialist • Web Developer • Software Designer</p>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Butwal Multiple Campus (TU), Butwal, Nepal • pradip.csit.dev@gmail.com</p>
+              </div>
+              <div class="nepal-flag-badge">
+                <span>🇳🇵</span> B.Sc. CSIT
+              </div>
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <h4 style="color: #fbbf24; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.4rem;">Education</h4>
+              <p style="font-size: 0.9rem; color: #e2e8f0; font-weight: 600;">Bachelor of Science in Computer Science & Information Technology (B.Sc. CSIT)</p>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Butwal Multiple Campus, Tribhuvan University, Nepal</p>
+            </div>
+
+            <div style="margin-bottom: 1.25rem;">
+              <h4 style="color: #fbbf24; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.4rem;">Technical Skill Summary</h4>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">
+                <strong>Languages & Frameworks:</strong> Java (Core, SE 17/21), Spring Boot 3, Spring Cloud, Hibernate/JPA, JavaScript (ES6+), React 18, HTML5, CSS3, Tailwind CSS.<br>
+                <strong>Architecture:</strong> Microservices, Domain-Driven Design (DDD), RESTful APIs, WebSockets, Kafka Event Streaming, Concurrency & Virtual Threads.<br>
+                <strong>Databases & Tools:</strong> PostgreSQL, MySQL, Redis, Docker, Git/GitHub, Maven, Gradle, Figma UI/UX, AWS Foundations.
+              </p>
+            </div>
+
+            <div>
+              <h4 style="color: #fbbf24; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 0.4rem;">Professional Credentials</h4>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                • Oracle Certified Professional: Java SE 17 Developer<br>
+                • Meta Full-Stack Web Development Specialization<br>
+                • AWS Certified Cloud Foundations<br>
+                • Google UX Design Professional Certificate<br>
+                • HackerRank Java Gold Badge & Problem Solving Advanced
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+            <button class="btn btn-secondary" onclick="navigator.clipboard.writeText('pradip.csit.dev@gmail.com'); window.showDevToast('Recruiter contact copied! 📋');">
+              <i class="fas fa-copy"></i> Copy Contact Email
+            </button>
+            <button class="btn btn-primary" onclick="window.showDevToast('Downloading PDF Resume file...');">
+              <i class="fas fa-file-download"></i> Download Official PDF
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Credential Preview Modal -->
+    <div id="cert-preview-modal" class="modal-overlay">
+      <div class="modal-dialog" style="max-width: 650px;">
+        <div class="modal-header-bar">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fas fa-certificate" style="color: var(--accent-cyan); font-size: 1.3rem;"></i>
+            <h3 id="cert-modal-title" style="font-size: 1.15rem; font-weight: 700; color: #fff;">Certificate Credential</h3>
+          </div>
+          <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+        </div>
+        <div class="modal-body" id="cert-modal-body">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="dev-toast" class="toast-notice"></div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/canvas-bg.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/ai-tool.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
